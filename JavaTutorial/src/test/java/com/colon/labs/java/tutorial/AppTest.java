@@ -1,4 +1,4 @@
-package com.colon.labs.JavaTutorial;
+package com.colon.labs.java.tutorial;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
