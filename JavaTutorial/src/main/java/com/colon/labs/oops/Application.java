@@ -2,23 +2,28 @@ package com.colon.labs.oops;
 
 import java.util.Scanner;
 
-public class Application {
+public class Application extends Car {
 
-	public static void main(String[] args) {
+	public  void start(String model, int year) {
+		
+	    
 		
 		Car myCar=new Car();
-		Scanner x=new Scanner(System.in);
-		System.out.println("Enter your Car model:");
-		String model=x.nextLine();
+
 		
 		String engine =myCar.engine(model);
 		String brand = myCar.brand(model);
+		StringBuilder brandY= myCar.brand(model, year);
 		
 		myCar.type(model);
-		System.out.println(engine);
-		System.out.println(brand);
+		System.out.println("Your Car's engine is:" + engine);
+		System.out.println("Your Car's brand is:" +brand);
+		
+		System.out.println("Your Car's brand is:" +brandY);
 		
 		
 	}
+	
+	
 
 }
