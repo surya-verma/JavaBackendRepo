@@ -2,11 +2,12 @@ package com.colon.labs.arrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class ArrayToArrayListAllOperations {
+	
+	private static ArrayToArrayListUsingStreamAndToListMethods ArrayToArrayListUsingStreamAndToListMethods;
 	
 	public List<String> arrayToListPart1(String[] stringArray) {
 		
@@ -69,7 +70,12 @@ public class ArrayToArrayListAllOperations {
 		
 		ArrayList<String> collectionArrayList=one.arrayToArrayListUsingCollectionAndArrayList(aarrayOfString);
 		System.out.println(collectionArrayList);
-
+		
+ 		ArrayList<String> arraylistByStream = ArrayToArrayListUsingStreamAndToListMethods.toArrayListUsingStream(aarrayOfString);
+		System.out.println(arraylistByStream);
+		
+		ArrayList<String> arrayListByListof=ArrayToArrayListUsingStreamAndToListMethods.toArrayListUsingToList(aarrayOfString);
+		System.out.println(arrayListByListof);
 	}
 
 }
