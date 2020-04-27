@@ -33,6 +33,12 @@ public class LinkedListIntro {
 		System.out.println(testlist);
 		testlist.set(5, "Kumar");
 		System.out.println(testlist);
+		testlist.offer("Last");
+		System.out.println(testlist);
+		testlist.offerLast("Last");
+		System.out.println(testlist);
+		testlist.offerFirst("Rakesh");
+		System.out.println(testlist);
 	}
 
 }
